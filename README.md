@@ -1,8 +1,6 @@
 # magicCrawl
 Crawl firstname stats from http://www.magicmaman.com/
 
-see [http://www.magicmaman.com/prenom/]
-
 ### Presentation
 
 You're a Geek ?

@@ -1,0 +1,23 @@
+{
+  "name": "magiccrawl",
+  "version": "1.0.0",
+  "description": "Crawl firstname stats from http://www.magicmaman.com/",
+  "main": "index.js",
+  "dependencies": {
+    "unidecode": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piercus/magicCrawl.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piercus/magicCrawl/issues"
+  },
+  "homepage": "https://github.com/piercus/magicCrawl#readme"
+}

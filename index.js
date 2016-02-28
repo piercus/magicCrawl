@@ -2,13 +2,14 @@ var fs = require("fs");
 var http = require("http");
 require("./curry.js");
 require("./objMapAsync.js");
+var unidecode = require('unidecode');
 
 var firstnames = require("./firstnames.json");
 var years = require("./years.json");
 
 
 var buildUrl = function(year, firstname){
-  return "http://www.magicmaman.com/direct/prenom/datacartedefrance?prenom="+firstname+"&anneeDeb="+year+"&anneeFin="+year+"&format=json";
+  return "http://www.magicmaman.com/direct/prenom/datacartedefrance?prenom="+unidecode(firstname)+"&anneeDeb="+year+"&anneeFin="+year+"&format=json";
 };
 
 var get = function(year, firstname, cb){
@@ -75,7 +76,7 @@ firstnames.mapAsync(function(firstname, index, cbFirstname){
         globalFile+=res[i].firstname+","+res[i].year+","+dep+","+res[i].perDeps[dep]+"\n";
       }
     }
-    
+
     cbFirstname();
   });
 }, {}, function(errs, res){

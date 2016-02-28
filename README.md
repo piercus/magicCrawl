@@ -13,13 +13,15 @@ This repo is made for you !
 
 Take a nap, you should not be on this repo ! should you ?
 
-### Installation
+### How to use it
 
-1. Install nodejs see [https://nodejs.org]
+1. Install nodejs and npm see [https://nodejs.org]
 2. Download the repo 
-3. Put the firstnames you want to crawl in **firstnames.json**
-4. Put the years you want to crawl in **years.json**
-5. In a console prompt `node index.js`
+3. Inside the downloaded folder do `npm install` to install dependencies
+4. Edit the firstnames you want to crawl in **firstnames.json**
+5. Edit the years you want to crawl in **years.json**
+6. In a console prompt `node index.js`
+7. Your data should be in `db.csv` file
 
 NB : the magicmaman.com databases is not fully clean, some years are not retrieved
 
